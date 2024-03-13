@@ -18,15 +18,15 @@ local scratch = require("scratch.scratch_file")
 local commands = {
   {
     name = "Scratch",
-    callback = config.initConfigInterceptor(scratch.scratch),
+    callback = scratch.scratch,
   },
   {
     name = "ScratchOpen",
-    callback = config.initConfigInterceptor(scratch.openScratch),
+    callback = scratch.openScratch,
   },
   {
     name = "ScratchWithName",
-    callback = config.initConfigInterceptor(scratch.scratchWithName),
+    callback = scratch.scratchWithName,
   },
 }
 
